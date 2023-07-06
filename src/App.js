@@ -23,9 +23,9 @@ function App() {
           <Route path="/apartmentnew" element={<ApartmentNew/>} />
           <Route path="/apartmentprotectedindex" element={<ApartmentProtectedIndex/>} />
           <Route path="/apartmentshow" element={<ApartmentShow/>} />
-          <Route path="/notfound" element={<NotFound/>} />
           <Route path="/signin" element={<SignIn/>} />
           <Route path="/sigup" element={<SignUp/>} />
+          <Route path="/*" element={<NotFound/>} />
         </Routes>
       <Footer/>
       
