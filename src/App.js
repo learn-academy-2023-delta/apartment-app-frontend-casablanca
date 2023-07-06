@@ -11,11 +11,20 @@ import SignUp from './pages/SignUp'
 import Home from './pages/Home'
 import Header from './components/Header';
 import Footer from './components/Footer';
+import { useState } from 'react';
+import { mockApartments } from './MockApartments';
+import { mockUsers } from './MockUsers';
 
 function App() {
+
+  const [apartments, setApartments] = useState(mockApartments)
+
+  const [currentUser, setCurrentUser] = useState(mockUsers[0])
+
+
   return (
     <div className='landing-page'>
-      <Header/>
+      <Header currentUser={currentUser}/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/apartmentedit" element={<ApartmentEdit/>} />
@@ -24,7 +33,7 @@ function App() {
           <Route path="/apartmentprotectedindex" element={<ApartmentProtectedIndex/>} />
           <Route path="/apartmentshow" element={<ApartmentShow/>} />
           <Route path="/signin" element={<SignIn/>} />
-          <Route path="/sigup" element={<SignUp/>} />
+          <Route path="/signup" element={<SignUp/>} />
           <Route path="/*" element={<NotFound/>} />
         </Routes>
       <Footer/>
