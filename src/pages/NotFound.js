@@ -1,8 +1,11 @@
 import React from 'react'
+import notFound from '../assets/404.jpeg'
 
 const NotFound = () => {
   return (
-    <div>NotFound</div>
+    <div>
+      <img src={notFound}></img>
+    </div>
   )
 }
 
