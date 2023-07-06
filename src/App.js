@@ -9,11 +9,13 @@ import NotFound from './pages/NotFound'
 import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
 import Home from './pages/Home'
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
-    
+    <div className='landing-page'>
+      <Header/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/apartmentedit" element={<ApartmentEdit/>} />
@@ -25,7 +27,9 @@ function App() {
           <Route path="/signin" element={<SignIn/>} />
           <Route path="/sigup" element={<SignUp/>} />
         </Routes>
-    </>
+      <Footer/>
+      
+    </div>
   );
 }
 
