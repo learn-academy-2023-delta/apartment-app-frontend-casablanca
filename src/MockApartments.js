@@ -1,4 +1,5 @@
 export const mockApartments = [{  street: '666 Elm Street',
+        id: 1,
         unit: '20',
         city: 'Raccoon City',
         state: 'OH',
@@ -9,7 +10,9 @@ export const mockApartments = [{  street: '666 Elm Street',
         pets: "gremlins only",
         image: "https://upload.wikimedia.org/wikipedia/commons/0/00/Sesame_Street_buildings_%28193090534%29.jpg"
     },
-    {  street: '312 Meadow Lane',
+    {  
+        id: 2, 
+        street: '312 Meadow Lane',
         unit: '420',
         city: 'Houston',
         state: 'TX',
@@ -20,7 +23,10 @@ export const mockApartments = [{  street: '666 Elm Street',
         pets: "all of them",
         image: "https://upload.wikimedia.org/wikipedia/commons/0/00/Sesame_Street_buildings_%28193090534%29.jpg"
     },
-    {  street: '256 John Street',
+
+
+    {   id: 3, 
+        street: '256 John Street',
         unit: '619',
         city: 'New York City',
         state: 'NY',

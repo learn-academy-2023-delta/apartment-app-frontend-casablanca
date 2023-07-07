@@ -4,42 +4,42 @@ import {Card, CardBody, CardSubtitle, CardText, CardTitle, Button} from 'reactst
 
 const ApartmentShow = ({apartments, deleteApartment}) => {
   const { id } = useParams()
-  let selectedApartment = apartments?.find(apartment => apartment.id === +apartment)
+  let selectedApartment = apartments?.find(apartment => apartment.id === +id)
 
   return (
 
     <div>
-      {/* {selectedApartment && (
+      {selectedApartment && (
         <Card
         style={{
           width: '21rem'
         }}
       >
         <img
-          alt={selectedApartment.city+""+selectedApartment.state}
-          src={selectedApartment.image}
+          alt={selectedApartment?.city+""+selectedApartment?.state}
+          src={selectedApartment?.image}
         />
         <CardBody>
           <CardTitle tag="h5">
-            {selectedApartment.price}
+            {selectedApartment?.price}
           </CardTitle>
           <CardSubtitle
             className="mb-2 text-muted"
             tag="h6"
           >
-            {selectedApartment.city}
-            {selectedApartment.state}
+            {selectedApartment?.city}
+            {selectedApartment?.state}
           </CardSubtitle>
           <CardText>
-            {selectedApartment.square_footage}
-            {selectedApartment.bedrooms}
-            {selectedApartment.bathrooms}
+            Square Footage: {selectedApartment?.square_footage}<br></br>
+            Bedrooms: {selectedApartment?.bedrooms}<br></br>
+            Bathrooms: {selectedApartment?.bathrooms}
           </CardText>
         </CardBody>
       </Card>
       )}
       <Button>
-        <NavLink to={`/apartmentedit/${selectedApartment.id}`} >
+        <NavLink to={`/apartmentedit/${selectedApartment?.id}`} >
         Edit Apartment Listing </NavLink>
       </Button>
 
@@ -47,7 +47,7 @@ const ApartmentShow = ({apartments, deleteApartment}) => {
         <NavLink to={'/apartmentindex'}>
         Delete Apartment</NavLink>
       </Button>
-       */}
+      
     </div>
   
   )
