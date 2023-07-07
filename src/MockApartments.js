@@ -1,4 +1,5 @@
 export const mockApartments = [{  street: '666 Elm Street',
+        user_id: 1,
         id: 1,
         unit: '20',
         city: 'Raccoon City',
@@ -11,6 +12,7 @@ export const mockApartments = [{  street: '666 Elm Street',
         image: "https://upload.wikimedia.org/wikipedia/commons/0/00/Sesame_Street_buildings_%28193090534%29.jpg"
     },
     {  
+        user_id: 1,
         id: 2, 
         street: '312 Meadow Lane',
         unit: '420',
@@ -25,7 +27,8 @@ export const mockApartments = [{  street: '666 Elm Street',
     },
 
 
-    {   id: 3, 
+    {   user_id: 2,
+        id: 3, 
         street: '256 John Street',
         unit: '619',
         city: 'New York City',
