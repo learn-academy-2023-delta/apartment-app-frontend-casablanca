@@ -30,7 +30,7 @@ function App() {
           <Route path="/apartmentedit" element={<ApartmentEdit/>} />
           <Route path="/apartmentindex" element={<ApartmentIndex apartments={apartments}/>} />
           <Route path="/apartmentnew" element={<ApartmentNew/>} />
-          <Route path="/apartmentprotectedindex" element={<ApartmentProtectedIndex/>} />
+          <Route path="/apartmentprotectedindex" element={<ApartmentProtectedIndex apartments={apartments} currentUser={currentUser}/>} />
           <Route path="/apartmentshow/:id" element={<ApartmentShow apartments={apartments}/>} />
           <Route path="/signin" element={<SignIn/>} />
           <Route path="/signup" element={<SignUp/>} />
